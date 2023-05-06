@@ -8,8 +8,3 @@ public class Jupiter implements Planet {
         explorer.visit(this);
     }
 }
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privac

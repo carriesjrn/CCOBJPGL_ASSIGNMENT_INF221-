@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: Pink;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="111.0" layoutY="71.0" text="Welcome to Czarina's Dating App">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="122.0" layoutY="162.0" text="username:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="mytextfield" layoutX="205.0" layoutY="163.0" prefHeight="25.0" prefWidth="258.0" />
+            <Label layoutX="123.0" layoutY="209.0" text="password:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="mypasswordfield" layoutX="204.0" layoutY="210.0" prefHeight="25.0" prefWidth="258.0" />
+            <Button fx:id="mybutton" layoutX="289.0" layoutY="262.0" mnemonicParsing="false" onAction="#Login" prefHeight="33.0" prefWidth="88.0" text="Login">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="mywarninglabel" layoutX="230.0" layoutY="320.0" text="username and password did not match" visible="false" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
